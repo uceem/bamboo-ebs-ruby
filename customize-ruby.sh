@@ -9,7 +9,7 @@ yum -q -y update
 yum -q -y install patch bash awk sed grep which tar curl gunzip bunzip git subversion gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel  make bzip2 iconv-devel libxslt-devel sqlite-devel zlib-static
 #yum -y install openssl-devel
 
-# Workaround problem installers
+# Workaround problem installers that don't honor the PAGER env variable
 
 mv /usr/bin/less /usr/bin/less.dist
 printf "#!/bin/sh\nexit 0\n" > /usr/bin/less
