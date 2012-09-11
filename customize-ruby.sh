@@ -21,8 +21,7 @@ export rvm_path=/usr/local/rvm
 rm -f /usr/local/rvm
 mkdir /mnt/bamboo-ebs/rvm 2>/dev/null
 ln -s /mnt/bamboo-ebs/rvm /usr/local/rvm
-curl -L https://get.rvm.io | grep -v 'builtin read' >/tmp/rvm.install.sh
-su bamboo -c "cat /tmp/rvm.install.sh | sudo bash -s stable --ruby"
+curl -L https://get.rvm.io | grep -v 'builtin read' | bash -s stable --ruby
 source /etc/profile.d/rvm.sh
 rvm install 1.9.2
 rvm use 1.9.2  ## stick with the default ruby at heroku
