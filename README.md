@@ -1,4 +1,5 @@
-bamboo-ebs-setup
+bamboo-ebs-ruby
 ================
 
-Setup scripts for Elastic Bamboo EBS snapshot for Rails and Django
+Setup scripts for Elastic Bamboo EBS snapshot for RVM, Ruby, and Rails
+
