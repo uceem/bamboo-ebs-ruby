@@ -6,7 +6,7 @@ date
 # We need some extra stuff
 
 yum -q -y update
-yum -q -y install patch bash awk sed grep which tar curl gunzip bunzip git subversion gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel  make bzip2 iconv-devel libxslt-devel sqlite-devel zlib-static
+yum -q -y install patch bash awk sed grep which tar curl gunzip bunzip git subversion gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel  make bzip2 iconv-devel libxslt-devel sqlite-devel zlib-static postgresql postgresql-devel postgresql-libs postgresql-server gnupg gnupg2 gpgme gpgme-devel libgpg-error
 #yum -y install openssl-devel
 
 # yum install openssl-devel is broken on Atlassian's image
