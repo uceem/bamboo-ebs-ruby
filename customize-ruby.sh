@@ -19,8 +19,8 @@ chmod a+x /usr/bin/less
 
 export rvm_path=/usr/local/rvm
 rm -f /usr/local/rvm
-mkdir /mnt/bamboo-ebs/ruby/rvm 2>/dev/null
-ln -s /mnt/bamboo-ebs/ruby/rvm /usr/local/rvm
+mkdir /mnt/bamboo-ebs/rvm 2>/dev/null
+ln -s /mnt/bamboo-ebs/rvm /usr/local/rvm
 curl -L https://get.rvm.io | grep -v 'builtin read' >/tmp/rvm.install.sh
 su bamboo -c "cat /tmp/rvm.install.sh | sudo bash -s stable --ruby"
 source /etc/profile.d/rvm.sh
